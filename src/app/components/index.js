@@ -39,6 +39,7 @@ export VideoCard from './CardPaper/VideoCard';
 export IdentityCard from './CardPaper/IdentityCard';
 // Search
 export SearchProduct from './Search/SearchProduct';
+export ProductGallery from './Gallery/ProductGallery';
 // Panel
 export FloatingPanel from './Panel/FloatingPanel';
 export Cart from './Cart/Cart';
