@@ -51,7 +51,7 @@ To make documenation easy and effective to access and implement, we attached sou
 -   You can see through, copy and paste directly any component in front of your eyes.
 
 ## License
-This project is licensed under the terms of the [MIT license](https://github.com/ilhammeidi/boss-lite/blob/master/LICENSE).
+This project is licensed under the terms of the [MIT license](https://github.com/ilhammeidi/boss-lite/blob/master/LICENSE.txt).
 
 
  
