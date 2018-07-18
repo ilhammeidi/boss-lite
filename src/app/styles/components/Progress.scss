@@ -1,0 +1,18 @@
+@import "../../styles/mixins";
+
+// Fill Background
+.bgInfo div{
+  background: material-color('blue', '300')
+}
+.bgSuccess div{
+  background: material-color('green', '300')
+}
+.bgWarning div{
+  background: material-color('orange', '300')
+}
+.bgError div{
+  background: material-color('red', '300')
+}
+.bgDefault div{
+  background: material-color('grey', '700')
+}

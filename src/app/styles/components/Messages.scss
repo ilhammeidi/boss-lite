@@ -1,0 +1,89 @@
+@import "../../styles/mixins";
+
+@mixin theme() {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  background: none;
+  border: none;
+}
+
+// Fill Background
+.bgInfo, div.bgInfo{
+  background: material-color('blue', '300');
+  button{
+    color: material-color('blue', '900');
+  }
+}
+.bgSuccess, div.bgSuccess{
+  background: material-color('green', '300');
+  button{
+    color: material-color('green', '900');
+  }
+}
+.bgWarning, div.bgWarning{
+  background: material-color('orange', '300');
+  button{
+    color: material-color('orange', '900');
+  }
+}
+.bgError, div.bgError{
+  background: material-color('red', '300');
+  button{
+    color: material-color('red', '900');
+  }
+}
+.bgDefault, div.bgDefault{
+  background: material-color('grey', '700')
+}
+
+// Fill Background Table Row
+table tr{
+  &.bgInfo{
+    background: material-color('blue', '50')
+  }
+  &.bgSuccess{
+    background: material-color('green', '50')
+  }
+  &.bgWarning{
+    background: material-color('orange', '50')
+  }
+  &.bgError{
+    background: material-color('red', '50')
+  }
+  &.bgDefault{
+    background: #FFF
+  }
+}
+
+// Icon Background
+.messageInfo{
+  @include theme();
+  .icon{
+    background: material-color('blue', '300')
+  }
+}
+.messageSuccess{
+  @include theme();
+  .icon{
+    background: material-color('green', '300')
+  }
+}
+.messageWarning{
+  @include theme();
+  .icon{
+    background: material-color('orange', '300')
+  }
+}
+.messageError{
+  @include theme();
+  .icon{
+    background: material-color('red', '300')
+  }
+}
+.messageDefault{
+  @include theme();
+  .icon{
+    background: material-color('grey', '300')
+  }
+}

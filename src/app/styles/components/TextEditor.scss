@@ -1,0 +1,24 @@
+@import "../../styles/mixins";
+
+.TextEditor{
+  background: #fff;
+  min-height: 200px;
+  border: 1px solid material-color('grey', '300');
+  padding: 0 10px;
+}
+
+.ToolbarEditor{
+  background: material-color('grey', '50');
+  border: none;
+}
+
+.textPreview{
+  width: 100%;
+  resize: none;
+  height: 305px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: material-color('grey', '300');
+  border-image: initial;
+  padding: 5px;
+}

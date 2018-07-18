@@ -1,0 +1,152 @@
+@import "../../styles/mixins";
+
+.stripped{
+  tbody tr:nth-child(even){
+    background: material-color('grey', '100');
+  }
+}
+
+.hover{
+  tbody tr:hover{
+    background: material-color('grey', '200');
+  }
+}
+
+.bordered{
+  thead tr{
+    background: material-color('grey', '200');
+  }
+  td, th{
+    border: 1px solid material-color('grey', '300');
+  }
+  tr td, tr th{
+    &:first-child{
+      border-left: none
+    }
+    &:last-child{
+      border-right: none
+    }
+  }
+}
+
+table.small{
+  tr{
+    height: 24px;
+    td, th{
+      padding: 4px 10px;
+      font-size: 12px;
+    }
+  }
+}
+
+table.medium{
+  tr{
+    height: 48px;
+    td, th{
+      padding: 4px 56px 4px 24px;
+      font-size: 14px;
+    }
+  }
+}
+
+table.big{
+  tr{
+    height: 64px;
+    td, th{
+      padding: 8px 56px 8px 24px;
+      font-size: 18px;
+    }
+  }
+}
+
+.nodata{
+  text-align: center;
+  padding: 10px 10px 40px;
+  font-size: 14px;
+  line-height: 16px;
+  color: material-color('grey', '500');
+  svg{
+    position: relative;
+    top: 5px;
+    width: 22px;
+    margin: 0 6px;
+    fill: material-color('grey', '500');
+  }
+}
+
+.hideAction{
+  display: none !important;
+}
+
+.tableCrud{
+  table-layout: fixed;
+  .hiddenField{
+    opacity: 0;
+    position: absolute;
+  }
+  .editing{
+    background: material-color('lime', '50');
+    td .crudInput{
+      &:before{
+        opacity: 1;
+      }
+      > * {
+        &:before, &:after{
+          opacity: 1;
+        } 
+      }
+      svg, button {
+        visibility: visible;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="email"]{
+        width: 100%;
+      }
+    }
+  }
+  th{
+    padding: 0 15px;
+  }
+  td{
+    padding: 0 15px;
+    &.toggleCell{
+      position: relative;
+    }
+    vertical-align: middle;
+    .coverReadonly{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 2;
+      display: none;
+      &.show{
+        display: block;
+      }
+    }
+    .crudInput{
+      &:before{
+        opacity: 0;
+      }
+      color: material-color('grey', '900');
+      > * {
+        color: material-color('grey', '900');
+        &:before, &:after{
+          opacity: 0;
+        } 
+      }
+      svg, button {
+        visibility: hidden;
+      }
+    }
+  }
+  td [disabled], td[disabled]:hover{
+    border: none !important;
+    box-shadow: none;
+    cursor: text;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+  }
+}

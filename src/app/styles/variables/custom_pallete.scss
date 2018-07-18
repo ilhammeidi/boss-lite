@@ -1,0 +1,31 @@
+@function grey(){
+  @return material-color('blue-grey', '400');
+}
+
+@function greyLight(){
+  @return material-color('blue-grey', '200');
+}
+
+@function greyLigther(){
+  @return material-color('blue-grey', '100');
+}
+
+@function greyDark(){
+  @return material-color('blue-grey', '600');
+}
+
+@function greyDarker(){
+  @return material-color('blue-grey', '800');
+}
+
+@function black(){
+  @return material-color('blue-grey', '900');
+}
+
+@function white(){
+  @return "#FFFFFF";
+}
+
+@function primaryColor(){
+  @return material-color('indigo', '900');
+}

@@ -1,0 +1,100 @@
+@import "../../styles/mixins";
+
+// Font Weight
+.lighter{
+  font-weight: 100
+}
+.light{
+  font-weight: 300
+}
+.regular{
+  font-weight: 400
+}
+.medium{
+  font-weight: 500
+}
+.bold{
+  font-weight: 700
+}
+.bolder{
+  font-weight: 900
+}
+
+// Font stlye
+.italic {
+  font-style: italic
+}
+.underline {
+  text-decoration: underline
+}
+.lineThrought {
+  text-decoration: line-through
+}
+
+// Color
+.textInfo{
+  color: material-color('blue', '500') !important;
+}
+.textSuccess{
+  color: material-color('green', '500') !important;
+}
+.textWarning{
+  color: material-color('orange', '500') !important;
+}
+.textError{
+  color: material-color('red', '500') !important;
+}
+.textGreyDark{
+  color: material-color('blue-grey', '900') !important;
+}
+.textGrey{
+  color: material-color('blue-grey', '400') !important;
+}
+.textGreyLight{
+  color: material-color('blue-grey', '100') !important;
+}
+
+// Transform
+.capitalyze{
+  text-transform: capitalize
+}
+.uppercase{
+  text-transform: uppercase
+}
+.lowercase{
+  text-transform: lowercase
+}
+
+// Align
+.textLeft{
+  text-align: left
+}
+.textRight{
+  text-align: right
+}
+.textCenter{
+  text-align: center;
+}
+.textJustify{
+  text-align: justify;
+}
+
+// List
+.list{
+  list-style: disc;
+  margin-left: 20px;
+  ul {
+    list-style: circle;
+    margin-left: 20px;
+  }
+}
+
+.orderedlist{
+  list-style: decimal;
+  margin-left: 20px;
+  ul {
+    list-style: lower-alpha;
+    margin-left: 20px;
+  }
+}
+

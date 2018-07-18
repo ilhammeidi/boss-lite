@@ -1,0 +1,215 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+ body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background: #fafafa
+ }
+
+ .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 600;
+ }
+
+a{
+    color: #e83e8c;
+}
+a:hover{
+    color: #fd92b6;
+}
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.img-thumbnail {
+  width: 640px
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#page-content-wrapper section{
+    margin-top: 200px;
+}
+
+#page-content-wrapper .container-fluid section:last-child{
+    margin-bottom: 200px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: relative;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    line-height: 30px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    transition: all .3s ease;
+    font-size: 12px;
+}
+
+.sidebar-nav li.current a{
+    color: #fd92b6;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    background: #311B92;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 100px;
+    font-size: 18px;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+    padding-top: 20px;
+    text-align: center;
+}
+.sidebar-nav > .sidebar-brand a img{
+    width: 130px;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#sidebar-wrapper .copy{
+    margin-top: 20px;
+    display: block;
+    padding: 10px;
+    font-size: 9px;
+    color: #fff;
+    text-align: left;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+    background: #4527A0;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+
+    #wrapper.toggled {
+        padding-left: 250px;
+    }
+
+    #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+
+
+/* Content */
+#intro{
+    margin-top: 150px;
+}
+
+.title{
+    color: #242424;
+}
+
+article p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+ul li{
+    margin-bottom: 10px;
+}
+ul li h3{
+    padding-top: 30px;
+}
+ul.styled li{
+    border-bottom: 1px dotted #dedede;
+}
+
+.log{
+    font-family: 'Courier New', monospace
+}
+
+.big{
+    font-size: 28px;
+}
+
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-yw4l{vertical-align:top}

@@ -1,0 +1,57 @@
+{
+  "extends": [
+    "eslint-config-airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "no-nested-ternary": 0,
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": 0,
+    "no-unused-expressions": 0,
+    "comma-dangle": 0,  // not sure why airbnb turned this on. gross!
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "no-console": 0,
+    "no-alert": 0,
+    "id-length": 0,
+    "no-script-url": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-underscore-dangle": 0,
+    "react/jsx-filename-extension": 0,
+    "global-require": 0,
+    "import/newline-after-import": 0,
+    "import/extensions": 0,
+    "prefer-template": 0,
+    "max-len": 0,
+    "react/prefer-stateless-function": 0,
+    "react/forbid-prop-types": 0,
+    "jsx-a11y/href-no-hash": "off",
+    "function-paren-newline": 0,
+    "react/no-typos": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/default-props-match-prop-types": 0,
+    "arrow-parens": 0
+  },
+  "plugins": [
+    "react",
+    "import",
+    "flowtype"
+  ],
+  "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "moduleDirectory": ["node_modules", "src"]
+    }
+  },
+  "globals": {
+    "__CLIENT__": true,
+    "__SERVER__": true,
+    "beforeAll": true,
+    "afterAll": true,
+  }
+}

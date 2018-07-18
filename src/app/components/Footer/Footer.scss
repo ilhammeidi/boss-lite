@@ -1,0 +1,8 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+$Footer: 'Footer';
+
+.#{$Footer} {
+  display: flex;
+}

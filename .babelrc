@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "env",
+    "react",
+    "stage-0",
+    "flow"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    [ "babel-plugin-webpack-alias", { "config": "./webpack/webpack.config.js" } ]
+  ]
+}
