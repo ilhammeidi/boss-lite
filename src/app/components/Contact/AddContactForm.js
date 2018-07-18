@@ -1,17 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Dropzone from 'react-dropzone';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Avatar from '@material-ui/core/Avatar';
-import Type from 'ba-components/Typography.scss';
-import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import Typography from '@material-ui/core/Typography';
 import { connect } from 'react-redux';
 import { reduxForm, Field } from 'redux-form/immutable';
 import { TextField } from 'redux-form-material-ui';
-import Tooltip from '@material-ui/core/Tooltip';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import PermContactCalendar from '@material-ui/icons/PermContactCalendar';
 import Bookmark from '@material-ui/icons/Bookmark';
@@ -44,45 +37,11 @@ class AddContactForm extends React.Component {
       pristine,
       submitting,
       handleSubmit,
-      onDrop,
-      imgAvatar
     } = this.props;
-    let dropzoneRef;
-    const acceptedFiles = ['image/jpeg', 'image/png', 'image/bmp'];
-    const fileSizeLimit = 3000000;
     return (
       <div>
         <form onSubmit={handleSubmit}>
           <section className={css.bodyForm}>
-            <div>
-              <Typography variant="button" className={Type.textCenter}>Upload Avatar</Typography>
-              <Dropzone
-                className={classes.hiddenDropzone}
-                accept={acceptedFiles.join(',')}
-                acceptClassName="stripes"
-                onDrop={onDrop}
-                maxSize={fileSizeLimit}
-                ref={(node) => { dropzoneRef = node; }}
-              />
-              <div className={classes.avatarWrap}>
-                <Avatar
-                  alt="John Doe"
-                  className={classes.uploadAvatar}
-                  src={imgAvatar}
-                />
-                <Tooltip id="tooltip-upload" title="Upload Photo">
-                  <IconButton
-                    className={classes.buttonUpload}
-                    component="button"
-                    onClick={() => {
-                      dropzoneRef.open();
-                    }}
-                  >
-                    <PhotoCamera />
-                  </IconButton>
-                </Tooltip>
-              </div>
-            </div>
             <div>
               <Field
                 name="name"
@@ -245,10 +204,8 @@ AddContactForm.propTypes = {
   classes: PropTypes.object.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   reset: PropTypes.func.isRequired,
-  onDrop: PropTypes.func.isRequired,
   pristine: PropTypes.bool.isRequired,
   submitting: PropTypes.bool.isRequired,
-  imgAvatar: PropTypes.string.isRequired,
 };
 
 const AddContactFormRedux = reduxForm({

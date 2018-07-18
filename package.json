@@ -1,9 +1,13 @@
 {
-  "name": "Boss-Ultimate",
-  "description": "Boss Ultimate - React Redux Material Admin Template",
+  "name": "Boss-Lite",
+  "description": "Boss Lite - React Redux Material Admin Template",
   "version": "1.0.0",
   "main": "./src/server/start.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilhammeidi/boss-lite.git"
+  },
   "scripts": {
     "start": "npm run dev",
     "dev": "run-p dev:client:build dev:server:prepare dev:server:build dev:server:delay",
