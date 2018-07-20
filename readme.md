@@ -9,7 +9,7 @@
 -   Built with one of most popular javascript library React.JS and Redux
 -   Use Google Material Design and Icons
 -   Easy to manage data collection with immutable.js
--   Written in ES6
+-   Written in ES6 / ES 2015
 -   Responsive design
 -   High performance with SSR (server side rendering) and JSS (CSS in JS)
 -   Clean code maintained by eslint
