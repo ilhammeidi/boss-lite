@@ -1,6 +1,6 @@
-### Boss Ultimate - React Redux Material Admin Template
+### Boss Lite - React Redux Material Admin Template
 ----------
-**Boss Ultimate** is admin dashboard template based on **React and Redux**. It provides you clean modern design and high performance react app with various color theme. This template has been built to makes the development process easy and fast for you, which is supported by material-ui v1.x, jss (css in js), immutable js, webpack, ssr (server side rendering), npm modern workflow and flexible layout with flexbox.
+**Boss Lite** is admin dashboard template based on **React and Redux**. It provides you clean modern design and high performance react app with various color theme. This template has been built to makes the development process easy and fast for you, which is supported by material-ui v1.x, jss (css in js), immutable js, webpack, ssr (server side rendering), npm modern workflow and flexible layout with flexbox.
 
 ![enter image description here](https://res.cloudinary.com/ux-maestro/image/upload/v1531882112/boss-lite/banner-lite.jpg)
 
@@ -9,7 +9,7 @@
 -   Built with one of most popular javascript library React.JS and Redux
 -   Use Google Material Design and Icons
 -   Easy to manage data collection with immutable.js
--   Written in ES6
+-   Written in ES6 / ES 2015
 -   Responsive design
 -   High performance with SSR (server side rendering) and JSS (CSS in JS)
 -   Clean code maintained by eslint
@@ -51,7 +51,7 @@ To make documenation easy and effective to access and implement, we attached sou
 -   You can see through, copy and paste directly any component in front of your eyes.
 
 ## License
-This project is licensed under the terms of the [MIT license](https://github.com/ilhammeidi/boss-lite/blob/master/LICENSE).
+This project is licensed under the terms of the [MIT license](https://github.com/ilhammeidi/boss-lite/blob/master/LICENSE.txt).
 
 
  
