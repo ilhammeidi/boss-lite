@@ -61,7 +61,7 @@ class App extends React.Component {
         <div className={classes.root}>
           <Loading
             show={pageLoaded}
-            color="rgba(255,255,255,.9)"
+            color="rgba(255,255,255,.7)"
             showSpinner={false}
           />
           {renderRoutes(route.routes)}
