@@ -2,7 +2,7 @@
 ----------
 **Boss Lite** is admin dashboard template based on **React and Redux**. It provides you clean modern design and high performance react app with various color theme. This template has been built to makes the development process easy and fast for you, which is supported by material-ui v1.x, jss (css in js), immutable js, webpack, ssr (server side rendering), npm modern workflow and flexible layout with flexbox.
 
-![enter image description here](https://res.cloudinary.com/ux-maestro/image/upload/v1531882112/boss-lite/banner-lite.jpg)
+![enter image description here](https://github.com/ilhammeidi/boss-docs/blob/master/images/banner.jpg?raw=true)
 
 # Template Feature
 
